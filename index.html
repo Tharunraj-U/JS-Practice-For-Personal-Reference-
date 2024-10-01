@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    .con{
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+    }
+       h1{
+          color:grey;
+       }
+       .my{
+        display: flex;
+        padding: auto;
+        flex-direction: row;
+        width: 40%;
+        height: 400px;
+        overflow-y: auto;
+        background-color: #f9f9f9;
+      
+        box-shadow: 10px 10px  30px black;
+        scroll-behavior: smooth;
+       }
+       .read-more {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 8px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+   </style>
+</head>
+<body>
+   <h1 >Random ten jokes</h1> 
+   <!-- for getting the data  -->
+   <button ondblclick="getdata()" >Get data</button>  
+   <div class="con">
+   <div class="my"></div>
+   <div class="my"></div>
+   <div class="my"></div>
+   <div class="my"></div>
+   
+</div>
+     
+   <!-- scroll function using js -->
+   <button class="read-more" onclick="scrollToBottom()">Read More</button>
+</body>
+<script src="js.js"></script>
+</html>
