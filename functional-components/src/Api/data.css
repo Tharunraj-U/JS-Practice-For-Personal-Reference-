@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("https://wallpaperaccess.com/full/133526.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.body1 {
+    background-color: rgba(7, 29, 48, 0.9);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    overflow-y: auto;
+    padding-top: 5%;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2 {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h6 {
+    margin: 0;
+    padding: 15px;
+    font-size: 1.2rem;
+    color: rgb(244, 237, 237);
+    text-shadow: 1px 1px 2px rgba(49, 178, 14, 0.3);
+}
+
+p {
+    margin: 0;
+    color: aliceblue;
+    font-size: 1rem;
+    padding: 10px;
+    line-height: 1.6;
+}
+
+.containerForSearchBox {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    column-gap: 15px;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+}
+
+input {
+    flex-grow: 2;
+    min-width: 200px;
+    max-width: 400px;
+    padding: 12px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+    flex-grow: 0.5;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+@media (max-width: 768px) {
+    .containerForSearchBox {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    input, button {
+        width: 100%;
+        max-width: none;
+    }
+}

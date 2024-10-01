@@ -1,0 +1,68 @@
+.body1 {
+    background-color: rgba(7, 29, 48, 0.942);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    /* Add padding around the body */
+    /* Ensure the body takes full height */
+}
+
+h1 {
+    margin: 0;
+    margin-left: auto; /* Centering with margin auto */
+    margin-right: auto; /* Centering with margin auto */
+    text-align: center; /* Center text */
+    color: #ffffff; /* Change text color to white */
+    font-size: 2rem; /* Increase font size for better visibility */
+}
+
+.containerForSearchBox {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    column-gap: 10px; /* Increased gap for better spacing */
+    align-items: center; /* Center items vertically */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Add border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.1); /* Slight background color */
+}
+
+p {
+    flex-grow: 1;
+    margin-left: 10%; /* Reduced margin for better responsiveness */
+    color: #ffffff; /* Change text color to white */
+    font-size: 1rem; /* Set a base font size */
+}
+
+input {
+    flex-grow: 2;
+    min-width: 150px; /* Set a minimum width */
+    max-width: 400px; /* Set a maximum width for responsiveness */
+    padding: 10px; /* Add padding for better user experience */
+    border: 1px solid #ffffff; /* Input border color */
+    border-radius: 5px; /* Rounded input corners */
+    background-color: rgba(255, 255, 255, 0.2); /* Input background color */
+    color: #ffffff; /* Input text color */
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Placeholder color */
+}
+
+button {
+    flex-grow: 0.5;
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded button corners */
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Button text color */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background change */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
